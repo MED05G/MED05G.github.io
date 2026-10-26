@@ -1,0 +1,52 @@
+<!doctype html><html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Curriculum vitae · Mohamed El Fellahi</title>
+  <meta name="description" content="Mohamed El Fellahi: education, research contributions, engineering experience and skills for research and R&D internships.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Curriculum vitae · Mohamed El Fellahi">
+  <meta property="og:description" content="Mohamed El Fellahi: education, research contributions, engineering experience and skills for research and R&D internships.">
+  <meta name="theme-color" content="#f7f7f2">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var savedTheme = localStorage.getItem('mef-theme');
+      document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+        ? savedTheme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (error) { /* Keep the default theme if browser storage is unavailable. */ }
+  </script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="personal.css">
+  <script src="script.js" defer></script>
+</head>
+<body class="cv-page"><a class="skip-link" href="#main">Skip to content</a>  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="identity" href="index.html#top" aria-label="Mohamed El Fellahi, home"><span class="monogram" aria-hidden="true">mef.</span><span>Mohamed El Fellahi</span></a>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme" type="button" aria-label="Switch to dark theme" aria-pressed="false">Dark <span aria-hidden="true">◐</span></button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">+</span></button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="index.html#about">About</a><a href="index.html#background">Experience</a><a href="index.html#projects">Selected work</a><a href="index.html#contact">Contact</a><a class="nav-cv" href="cv.html">CV ↗</a></nav>
+    </div>
+  </header>
+<main class="shell cv-content" id="main" tabindex="-1">
+  <div class="cv-heading" id="top"><p class="eyebrow">Curriculum vitae · October 2026</p><h1>Mohamed El Fellahi</h1><p class="cv-role">MSc Computer Science for Autonomous Systems · ELTE</p><p>Seeking research & R&D internships · Budapest, Hungary</p><div class="cv-contact"><a href="mailto:mohamed.elfellahi@qq.com">mohamed.elfellahi@qq.com</a><a href="https://github.com/MED05G" target="_blank" rel="noopener">GitHub ↗</a><a href="https://linkedin.com/in/medelf" target="_blank" rel="noopener">LinkedIn ↗</a></div><button class="button button-primary no-print" type="button" data-print>Print / save as PDF <span aria-hidden="true">↗</span></button></div>
+  <section class="cv-section" aria-labelledby="cv-profile"><h2 id="cv-profile">Profile</h2><p>Master’s student in Computer Science for Autonomous Systems with a bachelor’s in Software Engineering. Experience in explainable log anomaly detection, comparative machine learning experiments, medical imaging data preparation, and Python/Linux data processing. Led a seven-member internship team and worked in multilingual technical support.</p></section>
+  <section class="cv-section" aria-labelledby="cv-education"><h2 id="cv-education">Education</h2><article class="cv-entry"><div><h3>MSc Computer Science for Autonomous Systems</h3><span>September 2026–present · expected 2028</span></div><p>Eötvös Loránd University (ELTE) · Budapest, Hungary</p></article><article class="cv-entry"><div><h3>BSc Software Engineering</h3><span>2022–2026</span></div><p>Sichuan University · Chengdu, China</p><p>English-taught program. Belt and Road Initiative scholarship. Coursework in algorithms, operating systems, networks, databases, and software engineering.</p></article></section>
+  <section class="cv-section" aria-labelledby="cv-research"><h2 id="cv-research">Research & academic projects</h2>
+    <article class="cv-entry"><div><h3>Frozen Semantic Atlas</h3><span>Undergraduate research · 2026</span></div><ul><li>Designed a fixed 64 × 64 representation of parsed system logs with semantic, temporal, and structural channels.</li><li>Built a lightweight CNN and used Grad-CAM reverse mapping to inspect log evidence behind predictions.</li><li>Evaluated the framework on HDFS and BGL using chronological splits.</li></ul><a href="research/frozen-semantic-atlas.html">Project details & code ↗</a></article>
+    <article class="cv-entry"><div><h3>CT Dataset Pipeline for Deep Learning</h3><span>ELTE team project · 2026–present</span></div><ul><li>Contributed to DICOM inventory, CT series detection, XML annotation parsing, identifier matching, and validation for LIDC-IDRI.</li><li>Generated structured manifests and validation reports to support cleaning and later model comparisons.</li><li>The team’s indexing run processed 1,010 patients and 244,527 DICOM records, selecting 1,018 valid CT series.</li></ul><a href="research/ct-pipeline.html">Project details ↗</a></article>
+    <article class="cv-entry"><div><h3>Extended Digit Recognition on MNIST</h3><span>Collaborative study · 2025</span></div><ul><li>Focused on architecture and inductive bias in a three-person comparison of MLP, CNN, and autoencoder-based classification.</li><li>The study includes training curves, model comparisons, and error analysis.</li></ul><a href="research/digit-recognition.html">Study & notebook ↗</a></article>
+  </section>
+  <section class="cv-section" aria-labelledby="cv-experience"><h2 id="cv-experience">Engineering experience</h2><article class="cv-entry"><div><h3>Technical Support Intern · Hoymiles</h3><span>June 2025–January 2026</span></div><p>Chengdu, China</p><ul><li>Supported customers and installers in French and English on configuration, connectivity, and installation issues.</li><li>Diagnosed problems using documentation, monitoring data, and structured tests; followed cases through to resolution.</li><li>Reviewed installation evidence and documented outcomes in ticketing/CRM tools and Excel.</li></ul></article><article class="cv-entry"><div><h3>Big Data Engineering Intern & Team Leader · Suncaper</h3><span>February–April 2025</span></div><p>Chengdu Shangcheng Data Co., Ltd. · Chengdu, China</p><ul><li>Led a seven-member Yelp dataset team through task allocation, preprocessing, dashboard preparation, and presentation.</li><li>Processed business, review, and user tables using Hive, Spark, and Python on Ubuntu/Linux.</li><li>Completed practical training in Java, Python, Hadoop, MySQL, Hive, and Spark; received an excellent internship evaluation.</li></ul><a href="research/yelp-analysis.html">Related project ↗</a></article></section>
+  <section class="cv-section" aria-labelledby="cv-additional"><h2 id="cv-additional">Additional academic work</h2><p><strong>Library Management System:</strong> team leader on database design, a normalized 16-table schema, SQL workflows, validation, and a frontend interface.</p><p><strong>Face Recognition Prototype:</strong> team leader; image preprocessing, detection, CNN-based learning, evaluation, and an interface.</p><p><strong>Hand Gesture Recognition:</strong> preprocessing and CNN-based classification for an HCI prototype, with testing and documented comparisons.</p></section>
+  <section class="cv-section" aria-labelledby="cv-skills"><h2 id="cv-skills">Technical skills</h2><dl class="cv-skills"><div><dt>Programming</dt><dd>Python, Java, C, C++, SQL, Bash</dd></div><div><dt>Models & data</dt><dd>PyTorch, TensorFlow, OpenCV, NumPy, Pandas, CNNs</dd></div><div><dt>Systems</dt><dd>Linux/Ubuntu, PostgreSQL, MySQL, Hadoop, Hive, Spark</dd></div><div><dt>Tools</dt><dd>Git, Docker, GitHub Actions, Pytest, FastAPI, Django, Postman</dd></div></dl></section>
+  <section class="cv-section" aria-labelledby="cv-languages"><h2 id="cv-languages">Languages</h2><p>Arabic — native · English — C1 · French — fluent · Chinese — HSK 4</p></section>
+  <p class="cv-return no-print"><a href="index.html">← Back to my personal website</a></p>
+</main><footer class="shell site-footer"><span>© 2026 Mohamed El Fellahi</span><a href="index.html#contact">Contact ↗</a></footer></body></html>

@@ -1,0 +1,45 @@
+<!doctype html><html lang="en" data-theme="light"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>CT Dataset Pipeline · Mohamed El Fellahi</title>
+  <meta name="description" content="CT Dataset Pipeline: project context, Mohamed El Fellahi's contribution, methods and supporting resources.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="CT Dataset Pipeline · Mohamed El Fellahi">
+  <meta property="og:description" content="CT Dataset Pipeline: project context, Mohamed El Fellahi's contribution, methods and supporting resources.">
+  <meta name="theme-color" content="#f7f7f2">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var savedTheme = localStorage.getItem('mef-theme');
+      document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+        ? savedTheme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (error) { /* Keep the default theme if browser storage is unavailable. */ }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../personal.css">
+  <script src="../script.js" defer></script>
+</head><body class="project-page"><a class="skip-link" href="#main">Skip to content</a>  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="identity" href="../index.html#top" aria-label="Mohamed El Fellahi, home"><span class="monogram" aria-hidden="true">mef.</span><span>Mohamed El Fellahi</span></a>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme" type="button" aria-label="Switch to dark theme" aria-pressed="false">Dark <span aria-hidden="true">◐</span></button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">+</span></button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="../index.html#about">About</a><a href="../index.html#background">Experience</a><a href="../index.html#projects">Selected work</a><a href="../index.html#contact">Contact</a><a class="nav-cv" href="../cv.html">CV ↗</a></nav>
+    </div>
+  </header><main class="shell" id="main" tabindex="-1"><div class="project-heading" id="top"><a class="text-link" href="../index.html#projects">← Back to my profile</a><p class="eyebrow">ELTE team project · 2026–present</p><h1 id="ct-title">CT Dataset Pipeline</h1></div><article class="study-row study-detail" id="ct-pipeline" aria-labelledby="ct-title">
+        <div class="study-number" aria-hidden="true">03</div>
+        <div class="study-body">
+          <p class="eyebrow">Research data engineering · ELTE team project</p><p class="study-subtitle">LIDC-IDRI Dataset Pipeline</p>
+          <p>A Python pipeline for DICOM inventory, CT series detection, XML annotation parsing, and validation. The work focuses on turning a complex medical imaging collection into a consistent, auditable dataset for further analysis.</p>
+          <p class="contribution"><strong>My contribution:</strong> contributed to DICOM inventory, CT series detection, XML annotation parsing, identifier matching, and validation. Generated structured manifests and reports, including unmatched annotation references, to support later cleaning and model comparisons.</p><p class="contribution"><strong>Team indexing run:</strong> 1,010 patients and 244,527 DICOM records; the full run selected 1,018 valid CT series with no processing failures.</p>
+          <p class="tech-list">Python / DICOM / XML / Data validation</p>
+          <div class="resource-links"><a href="mailto:mohamed.elfellahi@qq.com?subject=CT%20Dataset%20Pipeline">Discuss this project ↗</a><span class="small-note">Project details available by email</span></div>
+        </div>
+        <aside class="dataset-note" aria-label="CT pipeline stages"><span class="eyebrow">From records to research</span><ol><li><span>01</span> Inventory DICOM files</li><li><span>02</span> Identify CT series</li><li><span>03</span> Parse annotations</li><li><span>04</span> Validate the dataset</li></ol><span class="dataset-label">LIDC-IDRI / CT imaging</span></aside>
+      </article><div class="project-next"><a href="../index.html#projects">← All selected work</a><a href="../index.html#contact">Contact me ↗</a></div></main><footer class="shell site-footer"><span>© 2026 Mohamed El Fellahi</span><a href="../index.html">Personal homepage ↗</a></footer></body></html>

@@ -1,0 +1,58 @@
+<!doctype html><html lang="en" data-theme="light"><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Frozen Semantic Atlas · Mohamed El Fellahi</title>
+  <meta name="description" content="Frozen Semantic Atlas: project context, Mohamed El Fellahi's contribution, methods and supporting resources.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Frozen Semantic Atlas · Mohamed El Fellahi">
+  <meta property="og:description" content="Frozen Semantic Atlas: project context, Mohamed El Fellahi's contribution, methods and supporting resources.">
+  <meta name="theme-color" content="#f7f7f2">
+  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('js');
+    try {
+      var savedTheme = localStorage.getItem('mef-theme');
+      document.documentElement.dataset.theme = savedTheme === 'light' || savedTheme === 'dark'
+        ? savedTheme : (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch (error) { /* Keep the default theme if browser storage is unavailable. */ }
+  </script>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../personal.css">
+  <script src="../script.js" defer></script>
+</head><body class="project-page"><a class="skip-link" href="#main">Skip to content</a>  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="identity" href="../index.html#top" aria-label="Mohamed El Fellahi, home"><span class="monogram" aria-hidden="true">mef.</span><span>Mohamed El Fellahi</span></a>
+      <div class="nav-controls">
+        <button class="theme-toggle" id="theme" type="button" aria-label="Switch to dark theme" aria-pressed="false">Dark <span aria-hidden="true">◐</span></button>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu <span aria-hidden="true">+</span></button>
+      </div>
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation"><a href="../index.html#about">About</a><a href="../index.html#background">Experience</a><a href="../index.html#projects">Selected work</a><a href="../index.html#contact">Contact</a><a class="nav-cv" href="../cv.html">CV ↗</a></nav>
+    </div>
+  </header><main class="shell" id="main" tabindex="-1"><div class="project-heading" id="top"><a class="text-link" href="../index.html#projects">← Back to my profile</a><p class="eyebrow">Undergraduate research project · 2026</p><h1 id="atlas-title">Frozen Semantic Atlas</h1></div><article class="featured-study study-detail" id="frozen-atlas" aria-labelledby="atlas-title">
+        <div class="study-topline"><span class="eyebrow">Undergraduate research · 2026</span><span class="tag">Explainable AI</span></div>
+        
+        <p class="study-subtitle">Explainable log anomaly detection through spatial representations.</p>
+        <p class="contribution personal-contribution"><strong>My contribution:</strong> designed the fixed 64 × 64 log representation, built the lightweight CNN, used Grad-CAM reverse mapping, and evaluated the framework on HDFS and BGL with chronological splits.</p><div class="featured-content">
+          <div>
+            <h2 class="label">The question</h2><p>Can a compact model detect unusual system behavior and point an analyst back to the log evidence behind its prediction?</p>
+            <h2 class="label">The approach</h2><p>Parse logs into templates, place them in a fixed 2D semantic atlas, and represent each window through structure, rhythm, and meaning. A lightweight CNN scores the grid; Grad-CAM activations map back to source templates.</p>
+            <h2 class="label">The investigation</h2><p>The repository includes chronological evaluation, channel and fusion ablations, stability analysis, and an audit of explanation localization.</p>
+          </div>
+          <figure class="method-figure">
+            <a class="figure-link" href="../assets/atlas-channels.png" target="_blank" rel="noopener" aria-label="View the full three-channel rasterization figure"><img src="../assets/atlas-channels.png" width="4770" height="2460" alt="Repository figure comparing structure, rhythm, meaning and combined RGB channels for normal and anomalous log windows" loading="lazy"></a>
+            <figcaption><span class="figure-label">FIG. 02</span> Three views of a log window.<br><a href="https://github.com/MED05G/Frozen-Semantic-Atlas/blob/main/figures/thesis/fig03_three_channel_rasterization.png" target="_blank" rel="noopener">View the source figure ↗</a></figcaption>
+          </figure>
+        </div>
+        <ol class="method-flow" aria-label="Frozen Semantic Atlas pipeline"><li><span>01</span> Parse logs</li><li><span>02</span> Build the atlas</li><li><span>03</span> Score the grid</li><li><span>04</span> Trace the evidence</li></ol>
+        <div class="results-strip" aria-label="Reported thesis results"><div><strong>0.9608</strong><span>HDFS test AUROC</span></div><div><strong>23,873</strong><span>Trainable parameters</span></div><div><strong>0.4514 <small>ms</small></strong><span>CPU latency / sample</span></div></div>
+        <p class="result-context">Reported repository results for the final model without a gate. Latency measured on an Apple M4 CPU, batch size 1. <a href="https://github.com/MED05G/Frozen-Semantic-Atlas/blob/main/results/reconciled_eval_tau090.json" target="_blank" rel="noopener">Evaluation details ↗</a></p>
+        <details class="evidence-details"><summary>Explore the evaluation & visual evidence <span aria-hidden="true">+</span></summary><div class="evidence-content">
+          <div class="table-scroll"><table><caption>HDFS test results · operational threshold τ = 0.90</caption><thead><tr><th scope="col">Metric</th><th scope="col">Reported value</th></tr></thead><tbody><tr><th scope="row">AUPRC</th><td>0.7734</td></tr><tr><th scope="row">F1 / precision / recall</th><td>0.8018 / 0.8939 / 0.7269</td></tr><tr><th scope="row">Explanation precision@3</th><td>0.720</td></tr></tbody></table></div>
+          <figure><a class="figure-link" href="../assets/atlas-evidence.png" target="_blank" rel="noopener" aria-label="View the full Grad-CAM evidence figure"><img src="../assets/atlas-evidence.png" width="4715" height="1485" alt="A log input grid, Grad-CAM heatmap and the corresponding source log templates highlighted by the explanation" loading="lazy"></a><figcaption>Grad-CAM localization and the corresponding source templates. <a href="https://github.com/MED05G/Frozen-Semantic-Atlas/blob/main/figures/thesis/visual_evidence.png" target="_blank" rel="noopener">Source figure ↗</a></figcaption></figure>
+        </div></details>
+        <div class="study-footer"><p class="tech-list">Python / PyTorch / Drain / Grad-CAM</p><div class="resource-links"><a href="https://github.com/MED05G/Frozen-Semantic-Atlas" target="_blank" rel="noopener">Code & method ↗</a><a href="https://github.com/MED05G/Frozen-Semantic-Atlas/tree/main/results" target="_blank" rel="noopener">Results & ablations ↗</a></div></div>
+      </article><div class="project-next"><a href="../index.html#projects">← All selected work</a><a href="../index.html#contact">Contact me ↗</a></div></main><footer class="shell site-footer"><span>© 2026 Mohamed El Fellahi</span><a href="../index.html">Personal homepage ↗</a></footer></body></html>

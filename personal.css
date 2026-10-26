@@ -1,0 +1,149 @@
+/* Personal homepage, shared project pages, and the general web CV. */
+.personal-home .hero { grid-template-columns: 1.15fr .85fr; gap: 72px; padding-block: 76px 65px; }
+.personal-home .hero-focus { font-size: 27px; margin-top: 25px; }
+.personal-home .hero-description { font-size: 15px; max-width: 490px; }
+.internship-intent { font: 400 11px/1.7 var(--mono); color: var(--accent); margin-top: 22px; }
+.personal-home .hero-actions { margin-top: 24px; }
+.profile-card { background: var(--accent-soft); border: 1px solid var(--line); padding: 28px; margin-top: 25px; }
+.profile-card-heading { display: flex; justify-content: space-between; align-items: center; gap: 18px; padding-bottom: 24px; border-bottom: 1px solid var(--line); }
+.profile-initials { font: 400 25px/1 var(--serif); color: var(--accent); }
+.profile-facts { margin: 0; }
+.profile-facts > div { padding: 24px 0; border-bottom: 1px solid var(--line); }
+.profile-facts dt { font: 9px/1.7 var(--mono); letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-bottom: 7px; }
+.profile-facts dd { margin: 0; font: 400 21px/1.35 var(--serif); }
+.profile-facts dd span { display: block; font: 12px/1.7 var(--sans); color: var(--muted); margin-top: 6px; }
+.profile-languages { padding-top: 23px; }
+.profile-languages > p:last-child { font-size: 12px; line-height: 2; margin-top: 9px; }
+.profile-languages > p:last-child span { color: var(--muted); font-size: 10px; }
+.personal-home .about-copy { font-size: 15px; }
+.personal-home .about-copy .lead { font-size: 19px; }
+.contribution-section { padding: 15px 0 58px; }
+.contribution-heading { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--line); }
+.contribution-heading h2 { font: 400 26px/1.2 var(--serif); }
+.contribution-heading > p { font-size: 12px; color: var(--muted); }
+.capability-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 45px; padding-top: 30px; }
+.capability-grid h3 { font: 400 28px/1.15 var(--serif); margin-top: 12px; }
+.capability-grid p { font-size: 14px; line-height: 1.8; color: var(--muted); margin-top: 15px; }
+.capability-grid a { display: inline-block; font-size: 11px; margin-top: 17px; }
+.personal-home .timeline-entry h4 { font-size: 16px; }
+.personal-home .timeline-entry > p { font-size: 13px; }
+.personal-home .background-section .section-heading h2 { max-width: 620px; }
+.work-summary { display: grid; grid-template-columns: .95fr 1.25fr; gap: 65px; padding: 30px 0; border-top: 1px solid var(--line); }
+.work-summary:last-of-type { border-bottom: 1px solid var(--line); }
+.work-summary h3 { font: 400 28px/1.2 var(--serif); margin-top: 11px; letter-spacing: -.015em; }
+.work-topic { color: var(--muted); font-size: 12px; margin-top: 7px; }
+.work-summary > div:last-child > p { font-size: 14px; line-height: 1.8; color: var(--muted); }
+.work-summary strong { color: var(--ink); font-weight: 500; }
+.work-summary .resource-links { margin-top: 15px; }
+.personal-home .engineering-work { margin-top: 27px; }
+.personal-home .toolkit-grid p { font-size: 13px; }
+.personal-home .contact-section p:not(.eyebrow) { font-size: 14px; }
+.project-heading { padding: 52px 0 34px; }
+.project-heading > .eyebrow { margin-top: 34px; }
+.project-heading h1 { font: 400 clamp(36px, 5vw, 58px)/1.1 var(--serif); letter-spacing: -.03em; margin-top: 14px; }
+.study-detail.featured-study { padding-top: 28px; }
+.study-detail .personal-contribution { font-size: 14px !important; margin-top: 26px; color: var(--muted); }
+.study-detail.study-row { grid-template-columns: minmax(0, 1.45fr) minmax(0, .85fr); gap: 55px; border-top: 1px solid var(--line); }
+.study-detail.study-row-no-visual { grid-template-columns: minmax(0, 1fr); }
+.study-detail > .study-number { display: none; }
+.study-detail .study-body > p:not(.eyebrow):not(.tech-list):not(.result-context) { font-size: 15px; }
+.study-detail .contribution { font-size: 14px !important; }
+.study-detail .study-body .study-subtitle { margin-top: 18px; font-size: 21px !important; font-family: var(--serif); }
+.study-detail .study-visual, .study-detail .dataset-note { grid-column: auto; }
+.project-next { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 20px; padding: 35px 0 60px; font-size: 13px; }
+.cv-content { max-width: 960px; padding-bottom: 35px; }
+.cv-heading { padding: 55px 0 35px; border-bottom: 1px solid var(--line); }
+.cv-heading h1 { font: 400 clamp(36px, 5vw, 54px)/1.1 var(--serif); letter-spacing: -.025em; margin-top: 17px; }
+.cv-heading .cv-role { margin-top: 17px; font-size: 17px; color: var(--ink); }
+.cv-heading > p:not(.eyebrow) { color: var(--muted); font-size: 14px; }
+.cv-heading > p + p { margin-top: 8px; }
+.cv-contact { display: flex; flex-wrap: wrap; gap: 10px 25px; font-size: 12px; margin-top: 20px; }
+.cv-heading button { cursor: pointer; margin-top: 23px; font-family: var(--sans); }
+.cv-section { padding: 29px 0; border-bottom: 1px solid var(--line); font-size: 14px; color: var(--muted); }
+.cv-section h2 { font: 400 27px/1.2 var(--serif); color: var(--ink); margin-bottom: 20px; }
+.cv-entry + .cv-entry { margin-top: 27px; }
+.cv-entry > div { display: flex; justify-content: space-between; gap: 15px; align-items: baseline; }
+.cv-entry h3 { font-size: 15px; font-weight: 500; color: var(--ink); line-height: 1.5; }
+.cv-entry > div > span { font-size: 11px; flex-shrink: 0; }
+.cv-entry > p { margin-top: 7px; font-size: 13px; }
+.cv-entry > a { font-size: 12px; }
+.cv-entry ul { margin: 10px 0; padding-left: 20px; font-size: 13px; }
+.cv-entry li + li { margin-top: 5px; }
+.cv-skills { margin: 0; }
+.cv-skills > div { display: grid; grid-template-columns: 140px 1fr; gap: 18px; margin-top: 11px; }
+.cv-skills dt { color: var(--ink); font-weight: 500; }
+.cv-skills dd { margin: 0; }
+.cv-return { padding-top: 28px; font-size: 13px; }
+@media (max-width: 1080px) {
+  .personal-home .hero { gap: 40px; }
+  .profile-card { padding: 23px; }
+  .profile-facts dd { font-size: 20px; }
+  .capability-grid { gap: 30px; }
+  .work-summary { gap: 40px; }
+  .cv-entry > div { flex-wrap: wrap; gap: 5px 15px; }
+}
+@media (max-width: 760px) {
+  .personal-home .hero { grid-template-columns: 1fr; gap: 35px; padding-block: 45px; }
+  .personal-home .hero-focus { font-size: 25px; }
+  .personal-home .hero-description { font-size: 14px; }
+  .profile-card { margin-top: 0; padding: 23px; }
+  .profile-card-heading { padding-bottom: 18px; }
+  .profile-facts > div { display: grid; grid-template-columns: 90px 1fr; gap: 15px; padding: 19px 0; }
+  .profile-facts dt { margin-top: 4px; }
+  .profile-facts dd { font-size: 21px; }
+  .profile-facts dd span { font-size: 11px; }
+  .profile-languages { padding-top: 19px; }
+  .personal-home .about-copy { font-size: 14px; }
+  .personal-home .about-copy .lead { font-size: 17px; }
+  .contribution-section { padding-bottom: 40px; }
+  .contribution-heading { align-items: start; flex-direction: column; gap: 10px; }
+  .capability-grid { gap: 23px; }
+  .capability-grid h3 { font-size: 24px; }
+  .capability-grid p { font-size: 12px; }
+  .work-summary { gap: 25px; grid-template-columns: .95fr 1.2fr; }
+  .work-summary h3 { font-size: 25px; }
+  .work-summary > div:last-child > p { font-size: 13px; }
+  .project-heading { padding: 30px 0; }
+  .study-detail.study-row { display: block; padding-block: 30px; }
+  .study-detail .study-visual, .study-detail .dataset-note { margin-top: 28px; }
+  .cv-heading { padding-top: 35px; }
+  .cv-skills > div { grid-template-columns: 110px 1fr; }
+}
+@media (max-width: 480px) {
+  .personal-home .hero { padding-top: 35px; }
+  .personal-home .hero-focus { font-size: 24px; }
+  .profile-facts > div { grid-template-columns: 70px 1fr; gap: 10px; }
+  .profile-facts dd { font-size: 19px; }
+  .profile-facts dt { font-size: 8px; }
+  .capability-grid { grid-template-columns: 1fr; gap: 26px; padding-top: 24px; }
+  .capability-grid article { border-bottom: 1px solid var(--line); padding-bottom: 23px; }
+  .capability-grid h3 br { display: none; }
+  .capability-grid h3 { font-size: 26px; }
+  .capability-grid p { font-size: 14px; }
+  .work-summary { grid-template-columns: 1fr; gap: 16px; padding-block: 25px; }
+  .work-summary > div:last-child > p { font-size: 14px; }
+  .cv-contact { flex-direction: column; gap: 9px; }
+  .cv-skills > div { grid-template-columns: 1fr; gap: 4px; }
+}
+@media print {
+  @page { size: A4; margin: 14mm; }
+  .cv-page { background: #fff; color: #172226; font-size: 10pt; line-height: 1.45; }
+  .cv-page .site-header, .cv-page .site-footer, .cv-page .skip-link, .no-print { display: none !important; }
+  .cv-page .shell { width: 100%; max-width: none; }
+  .cv-heading { padding: 0 0 14px; }
+  .cv-heading h1 { font-size: 27pt; margin-top: 8px; }
+  .cv-heading .cv-role { font-size: 12pt; }
+  .cv-heading > p:not(.eyebrow) { font-size: 10pt; }
+  .cv-heading .eyebrow { display: none; }
+  .cv-contact { margin-top: 10px; font-size: 9pt; }
+  .cv-section { padding: 16px 0; font-size: 10pt; }
+  .cv-section h2 { font-size: 16pt; margin-bottom: 12px; break-after: avoid; }
+  .cv-entry { break-inside: avoid; }
+  .cv-entry + .cv-entry { margin-top: 16px; }
+  .cv-entry h3 { font-size: 10.5pt; }
+  .cv-entry > div > span { font-size: 8pt; }
+  .cv-entry > p, .cv-entry ul { font-size: 9pt; }
+  .cv-entry > a { font-size: 8pt; }
+  .cv-skills > div { margin-top: 6px; }
+  .cv-page a, .cv-page p, .cv-page span, .cv-page dd { color: #172226; }
+}
